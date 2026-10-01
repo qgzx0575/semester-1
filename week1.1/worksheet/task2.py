@@ -13,7 +13,7 @@ savings = input("How much would you like to save every month? ")
 try:
     print(f"You will save £{int(savings)*12} every year.")
 except:
-    print("That is an Invalid amount.")
+    print("Invalid amount")
 
 # Calculate the total amount of money including interest (0.8% of the final annual amount) they will have saved in a year.
 # print this out in the format £X.XX (to two decimal places).
