@@ -16,6 +16,10 @@ try:
     print(f"Minimum: {floats[0]}")
     print(f"Maximum: {floats[listLength-1]}")
     print(f"Mean: {sum(floats)/listLength}")
-    print(f"Median: {floats[int(listLength/2)]}")
+    if listLength % 2 == 1:
+        floatMedian = floats[int(listLength/2)]
+    else:
+        floatMedian = (floats[int(listLength/2)]+floats[int(listLength/2-1)])/2
+    print(f"Median: {floatMedian}")
 except:
     sys.exit("Error: no numbers provided")
