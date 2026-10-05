@@ -15,7 +15,7 @@ try:
     floats.sort()
     print(f"Minimum: {floats[0]}")
     print(f"Maximum: {floats[listLength-1]}")
-    floatSum = sum(floats)/range(listLength)
-    print(f"Mean: {floatSum}")
+    print(f"Mean: {sum(floats)/listLength}")
+    print(f"Median: {floats[int(listLength/2)]}")
 except:
     sys.exit("Error: no numbers provided")
