@@ -8,10 +8,10 @@ temperature = float(input("Enter the temperature in Celsius: "))
 # Use an if statement to check temperature conditions:
 # 23 or above is hot, 10 to just below 23 is warm, below 10 is cold
 
-if XXX: 
+if temperature < 10: 
     # \u00B0 will print the Celsius character
     print(f"{temperature}\u00B0C is cold.")
-elif XXX: 
+elif 10 <= temperature < 23: 
     print(f"{temperature}\u00B0C is warm.")
 else:
     print(f"{temperature}\u00B0C is hot.")
