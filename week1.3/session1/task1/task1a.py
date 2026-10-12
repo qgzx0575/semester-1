@@ -2,8 +2,9 @@
 
 i = 0
 
-while i < 5:
-	print(i)
+while i <= 20:
+	if i%4 == 0:
+		print(i)
 	i = i + 1
 
 # Modify the loop to print numbers up to and including 20

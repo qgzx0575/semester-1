@@ -6,7 +6,6 @@ fruit = ['apple','pear','banana','orange']
 while fruit:
 	print(fruit.pop())
 
-
-# Why does this work?
-
-# What features of Python does it rely on?
+# fruit.pop() returns orange, banana, pear, and then finally apple, just like a stack. 
+# It doesn't loop because "while fruit" returns false once the stack is empty.
+# Because pop() returns the last item in the stack, removing itself once popped
