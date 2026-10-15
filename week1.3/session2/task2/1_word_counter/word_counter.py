@@ -4,6 +4,17 @@
 # You can use any of the .txt files to test this - or even make your own.
 
 # open and read the file
+with open("story.txt", "r") as text:
+    data = text.read().strip().split()
+    print(f"The word count of this file is {len(data)} words.")
+
+with open("story2.txt", "r") as text:
+    data = text.read().strip().split()
+    print(f"The word count of this file is {len(data)} words.")
+
+with open("glasses.txt", "r") as text:
+    data = text.read().strip().split()
+    print(f"The word count of this file is {len(data)} words.")
 
 # calculate the number of words
 # hint: you could use .split() to break up by spaces
