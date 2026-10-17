@@ -19,9 +19,9 @@ with open("sales.csv", "r") as file:
         days.append(line.strip().split(","))
         if bestSale[1] < int(days[row][2]):
             bestSale = [days[row][0],int(days[row][2])]
-        totalSum += int(days[row][2])
         if amountSold[1] < int(days[row][3]):
             amountSold = [days[row][1],int(days[row][3])]
+        totalSum += int(days[row][2])
         row += 1
     print(f"The largest sale day was on {bestSale[0]}, with a revenue of £{bestSale[1]}.")
     print(f"The average sale amount was £{totalSum/(row+1)}.")
