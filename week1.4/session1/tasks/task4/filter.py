@@ -17,4 +17,8 @@ def filter_positive_numbers(numbers):
     Returns:
         list of int: A list containing only the positive integers.
     """
-    return [num for num in numbers if num > 0]
+    return [num for num in numbers if int(num) > 0]
+
+numbers = (input("Enter your list of numbers, seperated by spaces: ").strip().split())
+print(numbers)
+print(f"Here is a list of only positive numbers: {filter_positive_numbers(numbers)}")
