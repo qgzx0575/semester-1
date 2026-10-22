@@ -16,6 +16,15 @@ def most_frequent_string(votes):
         and int is the count of its occurences
         - None, None: if votes is empty.
     """
+    most_frequent_item = "None"
+    item_count = 0
+    for item in votes:
+        if votes.count(item) > item_count:
+            item_count = votes.count(item)
+            most_frequent_item = votes[votes.index(item)]
+    if item_count == 0:
+        item_count = str("None")
+    return f"{most_frequent_item}, {item_count}"
 
     # Your task is to complete the body of the function based on the details in the docstring.
     # Hint 1: You can complete this task with for loops or comprehensions 
