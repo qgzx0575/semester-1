@@ -8,12 +8,12 @@ class Point:
     A point in 2D space.
     """
 
-    def __init__(x_coordinate, y_coordinate):
+    def __init__(dot, x_coordinate, y_coordinate):
         """
         Creates a Point, given x & y coordinates.
         """
-        x = x_coordinate
-        y = y_coordinate
+        dot.x = x_coordinate
+        dot.y = y_coordinate
 
 
 p = Point(1.5, 2.0)

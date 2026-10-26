@@ -12,8 +12,8 @@ class Point:
         """
         Creates a Point, given x & y coordinates.
         """
-        x = x_coordinate
-        y = y_coordinate
+        self.x = x_coordinate
+        self.y = y_coordinate
 
 
 p = Point(1.5, 2.0)
