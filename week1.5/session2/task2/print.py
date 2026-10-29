@@ -2,3 +2,11 @@
 
 # Write code here to create and print a Point object,
 # then create and print a Circle object
+
+import geometry
+
+q = geometry.Point(4,3)
+p = geometry.Point(5,4)
+c = geometry.Circle(4,p)
+print(q)
+print(c)
