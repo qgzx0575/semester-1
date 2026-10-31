@@ -21,10 +21,16 @@ class Person:
     # Write a constructor here to create and initialize name and
     # birth fields (see README.md for further details)
     def initials(self):
+        """
+        Returns initials of name in uppercase.
+        """
         initial = self.name.split()
         return "".join([x[0].upper() for x in initial])
 
     def is_birthday(self):
+        """
+        Returns true if birthday is today.
+        """
         return self.birth.month==date.today().month and self.birth.day==date.today().day
     # Implement methods initials() and is_birthday() here
     # (see README.md for further details)
