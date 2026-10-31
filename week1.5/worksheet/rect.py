@@ -10,7 +10,7 @@ class Rectangle:
         """
         # Add code here to check type and value of provided width & height,
         # raising appropriate exceptions if necessary (see README.md)
-        if not (isinstance(width, int) and isinstance(height, int) and width >= 0 and height >= 0):
+        if not (isinstance(width, int) and isinstance(height, int) and width > 0 and height > 0):
             raise TypeError("Values provided are not valid.")
         
         self.width = width
