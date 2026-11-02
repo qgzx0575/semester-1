@@ -37,7 +37,7 @@ class Point:
         """
         Returns a string representation of this point.
         """
-        return f"({self.x}, {self.y})"
+        return f"({self.x:.1f}, {self.y:.1f})"
 
     def distance(self):
         """
