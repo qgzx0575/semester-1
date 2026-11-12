@@ -7,6 +7,6 @@ def assign_values(x):
         x[i] = (i + 1) * (i + 1);
 
 if __name__ == "__main__":
-    data = [0] * 10
+    data = [0] * 100
     assign_values(data)
     print("Done!")
