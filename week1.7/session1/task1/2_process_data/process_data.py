@@ -1,6 +1,7 @@
 # from Week 4, Session 1: Task 4
 
 
+
 def process_data(data):
     """
     Processes a list of integers and returns the sum of all values.
