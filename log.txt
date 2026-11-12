@@ -1,0 +1,3 @@
+INFO:root:calculate_average(): started
+INFO:root:Total Score: 263, Total Assignments: 3
+INFO:root:Average Score: 87.66666666666667
