@@ -158,7 +158,8 @@ order_id  customer_id  restaurant_id  driver_id     order_time     status  deliv
     2291           73             16             2026-11-10 12:01  placed          2.49
 */
 -- SELECT order_id, driver_id, status FROM orders WHERE status = 'placed' AND 2026-10-01 <= order_time < 2026-11-01; -- kept order_id (primary key), driver_id, and status (issues)
-/*order_id  driver_id  status
+/*
+order_id  driver_id  status
 --------  ---------  ------
     1812             placed
     1817             placed
@@ -176,3 +177,25 @@ order_id  customer_id  restaurant_id  driver_id     order_time     status  deliv
 -- SELECT name, price FROM menu_items WHERE is_vegetarian = 1 ORDER BY price LIMIT 5; -- New query, moved WHERE to after FROM
 -- SELECT name, price FROM menu_items WHERE is_vegetarian = 1 LIMIT 5; -- Old query, forgot ORDER BY, resorts to default sorting, which is then truncated
 -- SELECT name, price FROM menu_items WHERE is_vegetarian = 1 ORDER BY price LIMIT 5; -- New query, added ORDER BY price
+
+-- No. 13
+-- SELECT * FROM menu_items ORDER BY price LIMIT 1; -- Limit of only 1
+/*
+item_id  restaurant_id       name       price  is_vegetarian
+-------  -------------  --------------  -----  -------------
+     49              6  Egg fried rice    3.5              1
+*/
+-- SELECT * FROM menu_items ORDER BY price LIMIT 5; -- Limit of 5; many dishes at the cheapest option, they can choose from multiple
+/*
+item_id  restaurant_id        name         price  is_vegetarian
+-------  -------------  -----------------  -----  -------------
+     49              6  Egg fried rice       3.5              1
+     50              6  Hot and sour soup    3.5              1
+     70              8  Baba ganoush         3.5              1
+     90             10  Edamame              3.5              1
+     95             11  Callaloo             3.5              1
+*/
+
+-- No. 14
+-- SELECT * FROM orders WHERE TIME(order_time) >= '21:00' ORDER BY order_time; -- You can tell late night bites occur between 21:00 and 23:00
+
