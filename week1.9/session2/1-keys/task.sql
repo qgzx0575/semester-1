@@ -1,6 +1,6 @@
 .headers on
 .mode column
 
-.tables
-
-.schema table_name
+-- for orders, order_id would be the best
+-- for drivers, driver_id
+-- for menu_items, item_id
